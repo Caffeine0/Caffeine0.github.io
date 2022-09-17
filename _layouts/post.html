@@ -94,14 +94,14 @@ layout: default
                 <script type="text/javascript">
                     var gitalk = new Gitalk({
     		    clientID: '{{site.gitalk.clientID}}',
-    		    clientSecret: '{{site.gitalkClientsecret}}',
+    		    clientSecret: '{{site.gitalk.Clientsecret}}',
     		    repo: '{{site.gitalk.repo}}',
     		    owner: '{{site.gitalk.owner}}',
     		    admin:  ['{{site.gitalk.admin}}'],
-    		    distractionFreeMode: {{site.gitalk.distractionFreeMode}}
+    		    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
 		    id: md5(localion.pathname),
                     });
-                    gitalk.render('gitalk-container')
+                    gitalk.render('gitalk-container');
                 </script>
                 {% endif %}
                 <!-- Gitalk end -->
